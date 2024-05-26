@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News Bento Box</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav role="navigation">
+        <h1>Nist News</h1>
+        <a href="#">Home</a>
+        <a href="#">Latest News</a>
+        <a href="#">Reviews</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- News Section -->
+        <section class="main-compartment">
+            <article class="news-section">
+                <img src="https://via.placeholder.com/300x150" alt="Art">
+                <h2>Unrecognized Genius</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur interdum.</p>
+                <button class="read-more" data-content="Rising star Alexandra's new work causes a lot of controversy in creative circles. According to the artist, the picture illustrates a state of horror.">Read More</button>
+                <p><small>By Wade Warren, 16h ago</small></p>
+            </article>
+            <article class="news-section">
+                <img src="https://via.placeholder.com/300x150" alt="Museum">
+                <h2>Museum of Modern Art Completed in London</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur interdum.</p>
+                <button class="read-more" data-content="On March 10, 2022, the Museum of Modern Art opened in London. More than 53,000 people have already booked tickets to the new museum.">Read More</button>
+                <p><small>5h ago</small></p>
+            </article>
+        </section>
+
+        <!-- Sidebar -->
+        <aside>
+            <h2>Number of the Day</h2>
+            <p>$80,000 was earned at a charity auction in Paris. The money raised goes to children's hospitals.</p>
+        </aside>
+    </main>
+
+    <!-- Popup -->
+    <div id="popup" class="popup" role="dialog" aria-labelledby="popup-text" aria-hidden="true">
+        <div class="popup-content">
+            <button class="close" aria-label="Close">&times;</button>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
