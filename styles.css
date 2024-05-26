@@ -1,0 +1,93 @@
+body {
+    font-family: 'NTR', sans-serif;
+    font-size: 22px;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+body:hover {
+    filter: grayscale(100%);
+}
+
+h1 {
+    text-align: center;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+    transition: transform 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.text {
+    font-size: 22px;
+    color: white;
+    margin-right: 20px;
+    border: solid 4px;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.image img {
+    width: 600px; 
+    height: 400px;
+    margin-top: 90px;
+    animation: slideInRight 1s ease forwards;
+    opacity: 0;
+    transition: transform 0.3s ease;
+}
+
+.image img:hover {
+    transform: scale(1.4);
+}
+
+.text p {
+    margin: 0;
+    color: white;
+    margin-bottom: 1px;
+    animation: slideInLeft 1s ease forwards;
+    opacity: 0;
+}
+
+.text a {
+    color: white;
+    text-decoration: none;
+    margin-top: 1px;
+    margin-bottom: 0;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.text a:hover {
+    transform: scale(1.1);
+}
+
+.text a {
+    animation: scrollAnimation 0.5s ease forwards; 
+    opacity: 1;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+    0% { opacity: 0; transform: translateX(100px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInLeft {
+    0% { opacity: 0; transform: translateX(-100px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
